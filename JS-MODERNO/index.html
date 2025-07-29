@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="promises.js"></script>
+</head>
+<body>
+    <script>
+        //destructure
+        const arr = ['Gabriel', 'Joao', 'Felipe'];
+
+        const [a,b,c] = arr;
+
+        alert(a);
+    </script>
+
+    <script>
+        //rest e spread
+
+        var nomes = [
+            {
+                nome:'Joao'
+            },
+            {
+                nome: 'Gabriel'
+            }
+        ]
+
+        const objetos = [...nomes,{
+            Nome:'Jorge'
+        }];
+    </script>
+</body>
+</html>

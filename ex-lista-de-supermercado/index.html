@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lista de Supermercado</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .lista-cadastro input[type=text]{
+            flex:1;
+            height: 40px;
+            padding-left: 20px;
+        }
+
+        .lista-produtos-single{
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc ;
+            display: flex;
+        }
+
+        .lista-produtos-single h3{
+            flex:1;
+            padding: 0 20px;
+        }
+
+        h3.price-produto{
+            text-align: right;
+            font-size: 18px;
+        }
+        h3.price-produto > span{
+            background-color: darkcyan;
+            padding: 0 10px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .soma-produto{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App lista de Supermercado</h1>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="Nome do produto..." name="nome_produto">
+        <input type="text" placeholder="Valor do produto" step="0.01" name="price">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+    <div class="lista-produtos">
+    
+    </div>
+    <div class="soma-produto">
+        <h2>TOTAL: R$0</h2>
+    </div>
+    <script src="supermercado.js">
+
+    </script>
+</body>
+</html>

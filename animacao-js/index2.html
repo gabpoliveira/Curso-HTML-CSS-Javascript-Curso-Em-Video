@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações em javascript 2</title>
+</head>
+<body>
+    <style>
+        .conteudo h1 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+
+        .mostrar{
+            height: 200px !important;
+        }
+    </style>
+    <div class = "conteudo">
+        <h1>TÍTULO <span>Mostrar</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus eos quos similique aperiam porro officiis iusto modi aliquid. Pariatur vel illum expedita autem alias aperiam nihil praesentium officiis ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ea corrupti quidem voluptas excepturi, odit error consectetur? Culpa, necessitatibus quae nam non quod, quaerat fugit molestias odio expedita deserunt voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptates neque ipsa doloremque? Earum, iste est, voluptate in rem obcaecati unde, consequatur sunt dolor nulla libero aut doloremque similique minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio nostrum ab fuga possimus ipsum impedit repellendus! Perferendis quaerat sunt laboriosam velit ipsa, quam reiciendis ad voluptate. Voluptas, quod esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore sed consectetur ad sapiente dolore, quia fuga quas ex. Eaque ratione ipsum rerum reiciendis! Accusantium, iusto! Minima corporis ipsam totam.</p>
+    </div>
+
+    <script>
+        var span = document.querySelector('.conteudo span');
+
+        span.addEventListener('click', function(){ 
+
+           var conteudo = document.querySelector('.conteudo p');
+           if(conteudo.classList.contains('mostrar')){
+            span.innerHTML = "Mostrar";
+            conteudo.classList.remove('mostrar');
+           }else{
+            conteudo.classList.add('mostrar');
+            span.innerHTML = "Ocultar";
+           }
+        }) //cria a animação de mostrar ou esconder o conteúdo
+    </script>
+
+ 
+    
+</body>
+</html>
